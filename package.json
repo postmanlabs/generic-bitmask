@@ -1,0 +1,30 @@
+{
+  "name": "generic-bitmask",
+  "version": "0.0.0",
+  "description": "Module to compute and manipulate bitmasks in JavaScript",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "scripts/test.sh"
+  },
+  "author": "Postman Labs <help@getpostman.com>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/postmanlabs/generic-bitmask.git"
+  },
+  "keywords": [
+    "postman",
+    "bitmask",
+    "flags"
+  ],
+  "devDependencies": {
+    "expect.js": "0.3.1",
+    "istanbul": "0.3.19",
+    "jscs": "2.1.1",
+    "jshint": "2.8.0",
+    "mocha": "2.3.2"
+  }
+}
