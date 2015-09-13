@@ -11,7 +11,7 @@ var expect = require('expect.js'),
 
 /* global describe, it, expect */
 describe('bitmask', function () {
-    var Bitmask = require('../../index');
+    var Bitmask = require('../../index').Mask;
 
     it('should have initial mask to zero', function () {
         var mask = new Bitmask();
