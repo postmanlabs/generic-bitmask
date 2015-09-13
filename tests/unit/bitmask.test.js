@@ -79,4 +79,11 @@ describe('bitmask', function () {
         mask.remove([9, 12]);
         expect(mask.get()).to.eql(40);
     });
+
+    it('can test multiple bits when sent as an array', function () {
+        var mask = new Bitmask(4648);
+        expect(mask.test([5, 9, 12])).to.be.ok();
+        expect(mask.test([5, 9, 12, 17])).to.not.be.ok();
+        expect(mask.test([])).to.not.be.ok();
+    });
 });

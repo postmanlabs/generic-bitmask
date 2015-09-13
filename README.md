@@ -49,4 +49,5 @@ mask.set(40); // sets 3 and 5 to true;
 console.log(mask.test(3)); // logs true;
 console.log(mask.test(4)); // logs false;
 console.log(mask.test(5)); // logs true;
+console.log(mask.test([3, 5])); // logs true;
 ```
