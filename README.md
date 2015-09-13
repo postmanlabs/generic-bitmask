@@ -24,7 +24,7 @@ npm install generic-bitmask --save-dev;
 ## Usage
 
 ```javascript
-var Bitmask = require('generic-bitmask');
+var Bitmask = require('generic-bitmask').Mask;
 
 // create a new instance of bitmask
 var mask = new Bitmask();
@@ -49,4 +49,24 @@ mask.set(40); // sets 3 and 5 to true;
 console.log(mask.test(3)); // logs true;
 console.log(mask.test(4)); // logs false;
 console.log(mask.test(5)); // logs true;
+console.log(mask.test([3, 5])); // logs true;
+```
+
+### Using the mask descriptor
+
+```javascript
+var Bitmask = require('generic-bitmask').Mask,
+	Descriptor = require('generic-bitmask').Descriptor;
+
+// create a new instance of bitmask
+var mask = new Bitmask(),
+	descriptors = new Descriptor({
+		read: 1,
+		write: 2
+	});
+
+// Set the mask flags for the mask
+descriptor.add('read', mask);
+descriptor.validate('read', mask);
+descriptor.remove('read', mask);
 ```

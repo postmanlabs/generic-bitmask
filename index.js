@@ -1,1 +1,4 @@
-module.exports = require('./lib/bitmask');
+module.exports = {
+    Mask: require('./lib/bitmask'),
+    Descriptor: require('./lib/descriptor')
+};
