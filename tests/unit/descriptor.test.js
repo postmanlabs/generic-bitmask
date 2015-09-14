@@ -81,4 +81,11 @@ describe('descriptor', function () {
         expect(d.valueOf('r')).to.be(3);
         expect(d.valueOf(['r', 'w'])).to.eql([3, 5]);
     });
+
+    it('[private] should return compounded values for named bits', function () {
+        var d = new Descriptor({ r: 3, w: 5, x: 7 });
+
+        expect(d.compoundValueOf('r')).to.be(8);
+        expect(d.compoundValueOf(['r', 'w'])).to.eql(40);
+    });
 });
