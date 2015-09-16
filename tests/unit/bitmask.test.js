@@ -86,4 +86,16 @@ describe('bitmask', function () {
         expect(mask.test([5, 9, 12, 17])).to.not.be.ok();
         expect(mask.test([])).to.not.be.ok();
     });
+
+    it('should return negative for non numeric values', function () {
+        var mask = new Bitmask();
+        expect(mask.test([])).to.not.be.ok();
+        expect(mask.test('')).to.not.be.ok();
+        expect(mask.test({})).to.not.be.ok();
+        expect(mask.test(null)).to.not.be.ok();
+        expect(mask.test(false)).to.not.be.ok();
+        expect(mask.test(true)).to.not.be.ok();
+        expect(mask.test(NaN)).to.not.be.ok();
+        expect(mask.test(Infinity)).to.not.be.ok();
+    });
 });
