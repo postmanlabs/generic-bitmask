@@ -67,6 +67,10 @@ var mask = new Bitmask(),
 
 // Set the mask flags for the mask
 descriptor.add('read', mask);
-descriptor.validate('read', mask);
+descriptor.validate('read', mask); // returns true
+descriptor.extract(mask); // returns ['read']
 descriptor.remove('read', mask);
+
+// Check if bit names are set
+descriptor.defined('read') // returns true
 ```
