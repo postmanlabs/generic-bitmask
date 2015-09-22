@@ -1,6 +1,6 @@
 {
   "name": "generic-bitmask",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Module to compute and manipulate bitmasks in JavaScript",
   "main": "index.js",
   "directories": {
