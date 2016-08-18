@@ -9,7 +9,7 @@ var expect = require('expect.js'),
         return (new Array(count)).join().split(',').map(Number.call, Number);
     };
 
-/* global describe, it, expect */
+/* global describe, it */
 describe('bitmask', function () {
     var Bitmask = require('../../index').Mask;
 

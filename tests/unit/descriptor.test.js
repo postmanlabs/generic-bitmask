@@ -1,6 +1,6 @@
 var expect = require('expect.js');
 
-/* global describe, it, expect */
+/* global describe, it */
 describe('descriptor', function () {
     var Descriptor = require('../../index').Descriptor,
         Bitmask = require('../../index').Mask;
