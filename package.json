@@ -7,7 +7,9 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "scripts/test.sh"
+    "test": "scripts/test.sh",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "Postman Labs <help@getpostman.com>",
   "license": "Apache-2.0",
@@ -24,7 +26,11 @@
     "expect.js": "0.3.1",
     "istanbul": "0.4.5",
     "jscs": "3.0.7",
-    "jshint": "2.9.3",
-    "mocha": "3.0.2"
+    "jshint": "2.9.6",
+    "mocha": "4.0.0"
+  },
+  "snyk": true,
+  "dependencies": {
+    "snyk": "^1.91.0"
   }
 }
