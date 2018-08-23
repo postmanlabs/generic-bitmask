@@ -1,5 +1,7 @@
 # Bitmask
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/postmanlabs/generic-bitmask.svg)](https://greenkeeper.io/)
+
 This module enables easy manipulation and usage of bitmasking technique in JavaScript.
 
 ## What is bitmask?
